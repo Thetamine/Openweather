@@ -78,6 +78,7 @@ if(isset($_GET['cityWeather'])) {
         // if $_GET is not set, hide the Weather content
         echo "<h2>ERROR: Not a valid location, Please try again.</h2>";
     }
+    
 } else {
     
     ?>
