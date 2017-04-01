@@ -7,6 +7,16 @@ body {
 	background-color: #c7d4ea;
 }
 
+#landingMessage {
+	width: 500px;
+	text-align: center;
+	color: #495568;
+}
+
+h1 {
+	color: #495568;
+}
+
 #textEntry {
 	height: 50px;
 	width: 275px;
@@ -44,9 +54,6 @@ body {
 #textEntry:focus {
 	box-shadow: 0px 0px 1px black;
 }
-h1 {
-	color: white;
-}
 
 p {
 	font-size: 25px;
@@ -71,7 +78,7 @@ p {
 	border-bottom: 5px solid lightblue;
 	box-shadow: 0px 1px 10px -3px black;
 	height: 250px;
-
+	overflow: hidden;
 }
 
 #weatherDisplay {
@@ -79,10 +86,41 @@ p {
 	color: #e3e9f2;
 	padding: 20px;
 	text-shadow: 1px 1px 5px black;
+	animation: iconAnimation 1.8s ease-in-out;
 	/*background-color: white;*/
 }
 
+@keyframes iconAnimation {
+	0% {
+		opacity: 0;
+		transform: translateY(300px);
+	}
+	50% {
+		opacity: .50;
+		transform: translateY(-20px);
+	}
+	75%{
+		opacity: 1;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes textAnimation {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+
 #container {
+	overflow:hidden;
 	width: 400px;
 	background-color:#5e6c82;
 	display: flex;
@@ -97,6 +135,7 @@ hr {
 	width: 300px;
 	border: 1px solid #495568;
 	box-shadow: 0px 0.5px 10px -0.8px black;
+	animation: textAnimation 1.2s ease-in-out;
 }
 
 #weatherDescription {
@@ -109,6 +148,7 @@ hr {
 	color:#e3e9f2;
 	font-size: 30px;
 	padding-top: 10px;
+	animation: textAnimation 2s ease-in-out;
 
 }
 
@@ -151,6 +191,7 @@ hr {
 }
 
 .tempTile {
+	animation: iconAnimation 2.0s ease-in-out;
 	margin-left: 10px;
 	margin-right: 10px;
 	width: 110px;
@@ -175,6 +216,7 @@ hr {
 }
 
 .windHumidTile {
+	animation: iconAnimation 2.5s ease-in-out;
 	width: 120px;
 	padding: 0;
 	height: 112px;
