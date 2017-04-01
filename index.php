@@ -76,14 +76,18 @@ if(isset($_GET['cityWeather'])) {
     } else {
     
         // if $_GET is not set, hide the Weather content
+        echo "<h2>ERROR: Not a valid location, Please try again.</h2>";
+    }
+} else {
+    
     ?>
+    
     <div id="show-data">
         <h1>Openweather App</h1>
         <p>Enter your city and click 'Get Weather' to check your local weather conditions.</p>
     </div>
     <?php
-        
-    }
+    
 }
 
 ?>
