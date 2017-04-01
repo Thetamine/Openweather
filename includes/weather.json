@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"coord":{"lon":-87.7,"lat":34.73},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01n"}],"base":"stations","main":{"temp":284.4,"pressure":1016,"humidity":93,"temp_min":283.15,"temp_max":286.15},"visibility":16093,"wind":{"speed":1.5,"deg":360},"clouds":{"all":1},"dt":1491028500,"sys":{"type":1,"id":2539,"message":0.0039,"country":"US","sunrise":1491046619,"sunset":1491091945},"id":4094484,"name":"Tuscumbia","cod":200}
+=======
+{"coord":{"lon":-81.38,"lat":28.54},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":303.98,"pressure":1012,"humidity":31,"temp_min":303.15,"temp_max":304.15},"visibility":16093,"wind":{"speed":1.74,"deg":295.5},"clouds":{"all":0},"dt":1491078600,"sys":{"type":1,"id":733,"message":0.0022,"country":"US","sunrise":1491045252,"sunset":1491090250},"id":4167147,"name":"Orlando","cod":200}
+>>>>>>> f386f3a3a73813bf18383c8443b00253bb249141
