@@ -29,7 +29,9 @@ if(isset($_GET['cityWeather'])) {
     fclose($jsonDoc);
     
     if($_GET['cityWeather'] == $location) {
+        
         ?>
+        
         <div id="show-data">
         <div><span id="weatherDisplay"></span></div>
         <p>Location: <span id="location"></span></p>
@@ -39,15 +41,18 @@ if(isset($_GET['cityWeather'])) {
         <p>Temp-Max: <span id="tempMax"></span>&deg;F</p>
         <p>Humidity: <span id="humidity"></span>%</p>
         </div>
+        
         <?php
 
     } else {
     
-?>
+        // if $_GET is not set, hide the Weather content
+    ?>
     
     <div id="show-data"></div>
     
     <?php
+        
     }
 }
 
