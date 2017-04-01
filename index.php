@@ -19,7 +19,7 @@ if(isset($_POST['submit'])) {
     $response = file_get_contents($getWeatherAPI);
     
     // open the json doc
-    $jsonDoc = fopen("includes/weather.json", "w");
+    $jsonDoc = fopen("./includes/weather.json", "w");
     
     // write the request contents in the json doc. 
     fwrite($jsonDoc, $response);
@@ -31,9 +31,17 @@ if(isset($_POST['submit'])) {
 ?>
 <form action="" method="post">
     <input type="text" name="cityWeather" placeholder="City">
-    <input type="submit" name="submit" value="Get Weather">
+    <input type="submit" name="submit" value="Get Weather" id="submit">
 </form>
-<div id="show-data"></div>
+<div id="show-data">
+    <div><span id="weatherDisplay"></span></div>
+    <p>Location: <span id="location"></span></p>
+    <p>Condition: <span id="weatherDescription"></span></p>
+    <p>Current-Temp: <span id="temp"></span>&deg;F</p>
+    <p>Temp-Min: <span id="tempMin"></span>&deg;F</p>
+    <p>Temp-Max: <span id="tempMax"></span>&deg;F</p>
+    <p>Humidity: <span id="humidity"></span>%</p>
+</div>
 
 
 <?php include "includes/footer.php"; ?>
