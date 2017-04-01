@@ -70,6 +70,8 @@ if(isset($_GET['cityWeather'])) {
                 </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./includes/app.js"></script>
         
         <?php
 
@@ -83,8 +85,10 @@ if(isset($_GET['cityWeather'])) {
     ?>
     
     <div id="show-data">
-        <h1>Openweather App</h1>
-        <p>Enter your city and click 'Get Weather' to check your local weather conditions.</p>
+        <div id="landingMessage">
+            <h1>Openweather App</h1>
+            <p>Enter your city and click 'Get Weather' to check your local weather conditions.</p>
+        </div>
     </div>
     <?php
     
